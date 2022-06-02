@@ -1,0 +1,43 @@
+@media only screen and (max-width: 600px) {
+	.navbar {
+		position: relative;
+	}
+.navbar .shopping{
+	display: none;
+}
+.navbar .menu-bar{
+	display: block;
+	grid-column: 7 / 8;
+	font-size: 1.5em;
+	cursor: pointer;
+}
+.navbar .menu{
+	position: absolute;
+	width: 30%;
+	height: 40vh;
+	display: grid;
+	align-items: center;
+	background-color: rgb(230, 240, 230);
+	margin-top: 30em;
+	transform: translateX(400%);
+	transition: all 1s;
+}
+
+.navbar .menu-toggle {
+	transform: translateX(300%);
+}
+
+
+/*  Section main */
+
+.hero .info-content{
+	grid-column: 2 / 8;
+}
+
+.hero h1{
+	font-size: 3.5em;
+	
+}
+
+
+}
