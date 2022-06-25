@@ -91,32 +91,32 @@ ul li:hover ul{
 
 .totalproductos{
 	display: grid;
-	padding: 2%;
+	grid-template-columns: repeat(13, 1fr);
+	grid-row-gap: 75px;
+	padding-top: 40px;
+	padding-bottom: 80px;
 }
-
 .anillo{
-	width: 500px;
-	margin: 20px;
-	margin-left: 160px;
-	grid-column: 1 / 2;
-	
+	grid-column: 2 / 7;
 }
 .anilloid{
 	font-size: 1em;
 	background: none;
 	color: black;
-	padding: 10px;
 	border: 1px solid black;
+	padding: 10px;
 	border-radius: 30px;
 	margin-top: 10px;
+	width: 150px;
+	font-family:'Raleway', sans-serif;
+	font-weight: bold;
+	cursor: pointer;
 }
 .anilloid:hover{
 	background: rgb(43, 96, 18)
 }
 .pulseras{
-	width: 500px;
-	margin: 20px;
-	grid-column: 2 / 4;
+	grid-column: 8 / 13;
 }
 .pulserasid{
 	font-size: 1em;
@@ -126,15 +126,17 @@ ul li:hover ul{
 	border: 1px solid black;
 	border-radius: 30px;
 	margin-top: 10px;
+	align-items: center;
+	width: 150px;
+	font-family:'Raleway', sans-serif;
+	font-weight: bold;
+	cursor: pointer;
 }
 .pulserasid:hover{
 	background: rgb(43, 96, 18)
 }
 .aretes{
-	width: 500px;
-	margin: 20px;
-	margin-left: 160px;
-	grid-column: 1 / 2;
+	grid-column: 2 / 7;
 }
 .aretesid{
 	font-size: 1em;
@@ -144,14 +146,17 @@ ul li:hover ul{
 	border: 1px solid black;
 	border-radius: 30px;
 	margin-top: 10px;
+	align-items: center;
+	width: 150px;
+	font-family:'Raleway', sans-serif;
+	font-weight: bold;
+	cursor: pointer;
 }
 .aretesid:hover{
 	background: rgb(43, 96, 18)
 }
 .collares{
-	width: 500px;
-	margin: 20px;
-	grid-column: 2 / 4;
+	grid-column: 8 / 13;
 }
 .collaresid{
 	font-size: 1em;
@@ -161,8 +166,62 @@ ul li:hover ul{
 	border: 1px solid black;
 	border-radius: 30px;
 	margin-top: 10px;
+	align-items: center;
+	width: 150px;
+	font-family:'Raleway', sans-serif;
+	font-weight: bold;
+	cursor: pointer;
 }
 .collaresid:hover{
 	background: rgb(43, 96, 18)
+}
+.footer {
+	display: grid;
+	height:120px;
+	align-items: center;
+	background-color:rgb(209, 232, 209) ;
+	color: black;
+	grid-template-areas: "siguenos servicio";
+}
+
+.footer .siguenos{
+	grid-template-areas: siguenos;
+	display: flex;
+	justify-content: space-evenly;
+	background-color: rgb(209, 232, 209);
+	padding: 40px;
+	color: black;
+	text-align: center;
+}
+
+.footer .fa-instagram {
+	font-size: 1.5em;
+	margin-right: 30px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.footer .fa-facebook{
+	font-size: 1.5em;
+	margin-right: 20px;
+	justify-content: flex-start;
+}
+
+.footer .servicio{
+	text-align: left;
+}
+
+.btn1{
+	font-size: 1em;
+	background: none;
+	color: black;
+	padding: 10px;
+	border: 1px solid black;
+	border-radius: 30px;
+	margin-top: 10px;
+}
+.btn1:hover{
+	background: rgb(23, 54, 9);
 }
 
